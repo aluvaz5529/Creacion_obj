@@ -17,7 +17,7 @@ do
         # Añadimos el usuario con samba-tool y lo añadimos a la Unidad Organizativa grupo que le corresponde
         echo -n "Añadiendo usuario $c4 ..."
         #Añade el usuario en la UO correspondiente
-        samba-tool user create $c4 $c8 --given-name=$c1 --surname=$c2 --must-change-at-next-login --userou=OU=$c12 --given-name=$c1 --surname="$c2 $c3" --home-directory=/home/$c4 --mail=$c4,@omen.upv.es --department=$c11 --login-shell=/bin/bash
+        samba-tool user create $c4 $c8 --must-change-at-next-login --userou=OU=$c12 --given-name=$c1 --surname="$c2 $c3" --home-directory=/home/$c4 --mail=$c4,@omen.upv.es --department=$c11 --login-shell=/bin/bash
         #Se hace miembro del grupo correspondiente al usuario
         samba-tool group addmembers $c11 $c4
         echo "[Usuario $c4 creado correctamente]"
