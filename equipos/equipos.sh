@@ -4,5 +4,5 @@ do
         uo=$c2
         echo -n "Añadiendo equipo $c1..."
         computer add $c1 --computerou=$c2
-        echo "[El equipo $c1 creado correctamente]"
+        echo "[El equipo $c1 se creó correctamente]"
 done <  $1
