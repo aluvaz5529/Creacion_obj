@@ -1,8 +1,7 @@
-while IFS=: read -r col1 col2 col3 col4 col5 col6
+while IFS=: read -r c1
 do
         nombre=$c1
-        uo=$c2
         echo -n "Añadiendo equipo $c1..."
-        samba-tool computer create $c1 --computerou=$c2
+        samba-tool computer create $c1
         echo "[El equipo $c1 se creó correctamente]"
 done <  $1
