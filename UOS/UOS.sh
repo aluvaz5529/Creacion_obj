@@ -1,4 +1,5 @@
 #para comprobarlo samba-tool ou list
+#no se porque no me deja separarlos por ; en la línea 4 donde el while puse al empezar ; y no funcionaba
 #!/bin/bash
 while IFS=: read -r c1 c2 c3
 do
