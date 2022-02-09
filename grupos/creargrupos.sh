@@ -6,6 +6,6 @@ do
         # Añadimos el usuario con samba-tool y lo añadimos a la Unidad Organizativa grupo que le corresponde
         echo -n "Añadiendo grupo $c1..."
         #Añade el usuario en la UO correspondiente
-        samba-tool group create add $c1 --groupou=ou=$c2 --group-type=Security --group-scope=Global
+        samba-tool group add $c1 --groupou=ou=$c2 --group-type=Security --group-scope=Global
 done <  $1
 #para ver dentro de la uo que hay samba-tool ou listobjects ou=Rectorado
