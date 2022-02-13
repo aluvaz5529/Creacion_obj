@@ -1,6 +1,6 @@
 #version definitiva
 #para comprobar samba-tool group listmembers Servicios_U-GG
-#!bin/bash
+#!/bin/bash
 while IFS=: read -r c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 c11 c12 c13
 do
         # Extraemos los campos de los usuarios
