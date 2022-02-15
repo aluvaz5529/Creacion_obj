@@ -6,3 +6,6 @@ systemctl disable smbd
 systemctl unmask samba-ad-dc
 rm /etc/resolv.conf
 nano /etc/resolv.conf
+#vas y añades a ese archivo 
+domain upv.es
+nameserver 127.0.0.1
