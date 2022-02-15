@@ -8,3 +8,4 @@ sudo apt install samba -y
 sudo apt install krb5-config -y
 sudo apt install winbind y-
 sudo apt install smbclient -y
+#ahora te pregunta los nombres
